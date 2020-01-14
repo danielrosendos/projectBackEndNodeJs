@@ -55,3 +55,78 @@ Este projeto consiste em criar um backend, para uma empresa de barbearia, utiliz
 > **[Sequelize Cli](https://github.com/sequelize/cli)** - *yarn add sequelize-cli -D*
 
 > **[Sucrase](https://github.com/alangpierce/sucrase#readme)** - *yarn add sucrase -D*
+
+# **Inicializando o Projeto**
+Para inicializar o projeto, basta utilizar o comando
+
+> yarn install
+
+ou
+
+> npm install
+
+Após instalado as dependências, para iniciar o projeto, basta digitar no terminal o seguinte comando
+
+> yarn dev
+
+ou
+
+> npm dev
+
+
+# **Consumindo as rotas de Api**
+
+- **Criação de Usuário** - http://localhost:3333/users - **POST**
+
+	    {
+    		"name": "Nome do usuario",
+    		"email": "emailusuario@hotmail.com",
+    		"password": "password"
+    	}
+
+ - **Criar Sessão do Usuário** - http://localhost:3333/sessions - **POST**
+
+		{
+	    	"email": "emailusuario@hotmail.com"",
+	    	"password": "password"
+	    }
+
+- **Atualizar o usuário**  - http://localhost:3333/users - **PUT** - Barear Token (Criado na rota sessão do usuário)
+
+		{
+    		"name": "Nome do usuario",
+    		"email": "emailusuario@hotmail.com",
+    		"password": "123456"
+    	}
+
+- **Enviar Arquivo de Midia** - http://localhost:3333/files - **POST** - Barear Token (Criado na rota sessão do usuário)
+
+		Enviar como parâmetro um Multipart com cabeçalho file e o arquivo selecionado.
+
+- **Listagem de Providers** - http://localhost:3333/providers - **GET** - Barear Token (Criado na rota sessão do usuário)
+
+- **Deletar um Providers** - http://localhost:3333/providers/:id - **DELETE** - Barear Token (Criado na rota sessão do usuário)
+
+- **Criar um novo Appointments** - http://localhost:3333/appointments - **POST** - Barear Token (Criado na rota sessão do usuário)
+
+	    {
+			"provider_id": 6,
+			"date": "2020-01-08T20:47:00-03:00"
+		}
+
+- **Listar todos os Appointments** - http://localhost:3333/appointments - **GET** - Barear Token (Criado na rota sessão do usuário)
+
+ - **Listar todos os Schedules** - http://localhost:3333/schedule - **GET** - Barear Token -(Criado na rota sessão do usuário)
+
+	   Enviar no cabeçalho da requisição parâmetro date com a data no formato 2019-07-01T00:00:00-03:00
+
+ - **Criar nova notificação** - http://localhost:3333/notifications/:idnotification - **PUT** - Barear Token -(Criado na rota sessão do usuário)
+
+ - **Pegar todas as notificação** - http://localhost:3333/notifications/ - **GET** - Barear Token -(Criado na rota sessão do usuário)
+
+ - **Listar Horários Vago de Providers** - http://localhost:3333/providers/:id/available - **GET** - Barear Token -(Criado na rota sessão do usuário)
+
+       Enviar no cabeçalho da requisição parâmetro date com a data no formato 1578525622634 milissegundos
+
+
+
