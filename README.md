@@ -1,3 +1,5 @@
+![Projeto em Node.js](https://vertigo.com.br/wp-content/uploads/agile-logo-nodejs.png)
+
 # Projeto de Estudo e Piloto BackEnd em Node.Js
 
 Este projeto consiste em criar um backend, para uma empresa de barbearia, utilizando todas as tecnologias requeridas do mercado, como redis, queue, mongoDB, postgreSQL. Esse projeto é baseado no curso Gostack do site [Rockeseat](https://rocketseat.com.br/).
