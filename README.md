@@ -1,6 +1,9 @@
 <p align="center">
   <img src="https://vertigo.com.br/wp-content/uploads/agile-logo-nodejs.png">
 </p>
+<p align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSyItQ0DqDl7Ejm39Vmt8k-4WBmaB3FokqwUy2FXZUDernvZlJ8">
+</p>
 
 # Projeto de Estudo e Piloto BackEnd em Node.Js
 
