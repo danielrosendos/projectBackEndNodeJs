@@ -1,4 +1,6 @@
+<p align="center">
 ![Projeto em Node.js](https://vertigo.com.br/wp-content/uploads/agile-logo-nodejs.png)
+</p>
 
 # Projeto de Estudo e Piloto BackEnd em Node.Js
 
